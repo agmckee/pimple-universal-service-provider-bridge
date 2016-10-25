@@ -20,6 +20,8 @@ composer require thecodingmachine/pimple-universal-service-provider-bridge ^1.0
 
 ## Usage
 
+Create a `ServiceProviderPimpleBridge` instance and register container-interop service providers on this instance.
+
 ```php
 use TheCodingMachine\Pimple\ServiceProviderPimpleBridge;
 
