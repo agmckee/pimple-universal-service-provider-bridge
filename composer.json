@@ -1,0 +1,27 @@
+{
+    "name": "thecodingmachine/pimple-universal-service-provider-bridge",
+    "type": "library",
+    "description": "This library allows Pimple containers to use universal service providers as defined in container-interop/service-provider",
+    "keywords": ["PSR-11", "Pimple", "container-interop", "service-provider"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Négrier"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "pimple/pimple": "^3.0",
+        "container-interop/service-provider": "~0.3.0",
+        "acclimate/container": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+        "psr-4": { "TheCodingMachine\\Pimple\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "TheCodingMachine\\Pimple\\": "tests/" }
+    }
+}
