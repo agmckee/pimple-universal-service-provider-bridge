@@ -7,8 +7,14 @@
          bootstrap="vendor/autoload.php"
 >
     <testsuites>
-        <testsuite name="Simplex Test Suite">
+        <testsuite name="Bridge Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
 </phpunit>
